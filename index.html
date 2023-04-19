@@ -5,32 +5,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/main.css" rel="stylesheet">
   <!-- Adobe Fonts stylesheet -->
   <link rel="stylesheet" href="https://use.typekit.net/dfo5blv.css">
-  <link rel="stylesheet" href="https://use.typekit.net/dfo5blv.css">
-  <link rel="stylesheet" href="https://use.typekit.net/dfo5blv.css">
-  <!-- Bootstrap’s CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Personal CSS stylesheet -->
+  <link href="css/main.css" rel="stylesheet">
   <title>Document</title>
 </head>
 
 <body>
   <header>
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="index.html">
-          <img src="images/logo.png" width="50" alt="logo image of smiling girl with star pigtails and headphones">
+          <img src="images/logo.png" width="70" alt="logo image of smiling girl with star pigtails and headphones">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="works.html">works</a>
@@ -49,77 +46,78 @@
 
   <div class="bg-cover">
     <main>
-      <div class="banner container">
-        <h1><span>V</span>ICKY &#10022;<br><span>D</span>E <span>S</span>OUSA</h1>
-        <p>i’m a graphic designer, photographer, and illustrator</p>
+      <div class="banner container d-flex justify-content-center flex-column text-center">
+        <div class="banner-line-one">
+          <h1 class="display-1"><span class="font-change">V</span>ICKY &#10022;</h1>
+        </div>
+        <h1 class="display-1"><span class="font-change">D</span>E <span class="font-change">S</span>OUSA</h1>
+        <p>graphic designer, illustrator, & photographer</p>
       </div>
 
-      <div class="services card-deck container">
-        <h1><span>S</span>ERVICES</h1>
+      <div class="services card-deck text-center container">
+        <h1 class="display-1"><span class="font-change">S</span>ERVICES</h1>
         <div class="card">
-          <img class="card-img-top" 
-          srcset="images/graphic-design-226.png 320w,
-                  images/graphic-design-185.png 640w,
-                  images/graphic-design-318.png 1024w"
-          sizes="(min-width: 320px) 320w,
-                 (min-width: 640px) 640w,
-                 (min-width: 1024px) 1024w"
-          src="images/graphic-design-226.png" 
-          alt="logo image of smiling girl with star pigtails and headphones">
+          <img class="card-img-top" src="images/graphic-design.png" alt="logo image of smiling girl with star pigtails and headphones">
           <div class="card-body">
-            <h5 class="card-title">graphic design</h5>
+            <h2 class="card-title">graphic design</h2>
             <p class="card-text">logos • branding • social<br>media • posters • merch</p>
           </div>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="images/illustration.png" alt="Card image cap">
+        <div class="card mt-4">
+          <img class="card-img-top" src="images/illustration.png" alt="messily sketched logo image">
           <div class="card-body">
-            <h5 class="card-title">illustration</h5>
+            <h2 class="card-title">illustration</h2>
             <p class="card-text">posters • album covers •<br>merch • music videos</p>
           </div>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="images/photography.png" alt="Card image cap">
+        <div class="card mt-4">
+          <img class="card-img-top" src="images/photography.png" alt="3d version of logo image">
           <div class="card-body">
-            <h5 class="card-title">photography</h5>
+            <h2 class="card-title">photography</h2>
             <p class="card-text">editorials • concerts • album<br>covers • social media</p>
           </div>
         </div>
       </div>
 
       <div class="featured-works container">
-        <h1><span>F</span>EATURED <span>W</span>ORKS</h1>
-        <div class="card text-white">
-          <img class="card-img" src="..." alt="Card image">
+        <h1 class="display-1 text-center"><span class="font-change">F</span>EATURED</h1>
+        <h1 class="display-1 text-center"><span class="font-change">W</span>ORKS</h1>
+        <div class="card">
+          <img class="card-img" src="images/works/joji.jpg" alt="cartoon illustration of Joji">
           <div class="card-img-overlay">
-            <h5 class="card-title">joji</h5>
+            <a href="works.html" class="btn btn-primary stretched-link">joji</a>
           </div>
         </div>
-        <div class="card text-white">
-          <img class="card-img" src="..." alt="Card image">
+        <div class="card">
+          <img class="card-img" src="images/works/untitled.jpg" alt="portrait photograph of red Chinese characters projected on man">
           <div class="card-img-overlay">
-            <h5 class="card-title">untitled</h5>
+            <a href="works.html" class="btn btn-primary stretched-link">untitled</a>
           </div>
         </div>
-        <div class="card text-white">
-          <img class="card-img" src="..." alt="Card image">
+        <div class="card">
+          <img class="card-img" src="images/works/lost-in-translation.png" alt="realistic graphite illustration of girl looking out car window">
           <div class="card-img-overlay">
-            <h5 class="card-title">lost in translation</h5>
+            <a href="works.html" class="btn btn-primary stretched-link">lost in translation</a>
           </div>
         </div>
-        <div class="card text-white">
-          <img class="card-img" src="..." alt="Card image">
+        <div class="card">
+          <img class="card-img" src="images/works/window.jpg" alt="realistic vector portrait of Joji with lyrics on blue gradient background">
           <div class="card-img-overlay">
-            <h5 class="card-title">window</h5>
+            <a href="works.html" class="btn btn-primary stretched-link">window</a>
           </div>
         </div>
-        <a class="btn btn-primary" href="#" role="button">all works &#8594;</a>
+        <div class="text-center">
+          <a class="btn btn-primary" href="works.html" role="button">all works &#8594;</a>
+        </div>
       </div>
 
-      <div class="cta container">
-        <h1><span>L</span>IKE <span>W</span>HAT <span>Y</span>OU <span>S</span>EE?</h1>
-        <p>let me be the one to help you make the next big thing</p>
-        <a class="btn btn-primary" href="#" role="button">contact &#8594;</a>
+      <div class="gradient">
+        <div class="cta container text-center">
+            <h1 class="display-1"><span class="font-change">L</span>IKE <span class="font-change">W</span>HAT</h1>
+            <h1 class="display-1"><span class="font-change">Y</span>OU <span class="font-change">S</span>EE?</h1>
+            <p>let me be the one to help you make the next big thing</p>
+            <a class="btn btn-primary" href="contact.html" role="button">contact &#8594;</a>
+        </div>
       </div>
 
     </main>
@@ -136,10 +134,9 @@
       </div>
     </footer>
   </div>
-  <!-- Bootstrap’s JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
-  </script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 
 </html>
