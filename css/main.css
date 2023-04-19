@@ -1,0 +1,146 @@
+.container {
+    max-width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
+
+.bg-cover {
+    background: rgb(7,4,23);
+    background: linear-gradient(to top, rgba(7,4,23,0.75) 0%, rgba(7,4,23,0.75) 82%, rgba(7,4,23,0) 100%);
+}
+
+nav {
+    border-bottom: white solid 1px;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+h1, h2, .card-title {
+    font-family: termina, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.font-change {
+    font-family: schwarzkopf-new, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5rem;
+    color: white;
+}
+
+p, .btn {
+    font-family: gopher, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.banner h1, .featured-works h1, .cta h1 {
+    line-height: 3.5rem;
+}
+
+.banner {
+    height: 800px;
+}
+
+.display-1 {
+    font-size: 4rem;
+}
+
+.display-1 span {
+    font-size: 4.5rem;
+}
+
+.banner-line-one span {
+    font-size: 6.5rem;
+}
+
+.banner-line-one h1 {
+    font-size: 5.5rem;
+}
+
+.card, .card-img {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1.5rem;
+    border: none;
+}
+
+.services .card {
+    padding-bottom: 15px;
+}
+
+.card-img-top {
+    padding: 50px 50px 20px 50px;
+}
+
+.featured-works {
+    padding-top: 10rem;
+}
+
+.featured-works .card {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.card-img-overlay a {
+    font-family: termina, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    background-color: rgba(203, 203, 203, 0.6);
+    color: rgba(7,4,23,0.75);
+    border-radius: 2.5rem;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    border-radius: 2rem;
+    padding: 15px 25px 15px 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+}
+
+.btn:hover {
+    background-color: #DA1A5C;;
+    color: white;
+}
+
+/* Positions phone graphic behind CTA text */
+.cta {
+    height: 450px;
+    background-image: url('../images/phone.png');
+    background-repeat: no-repeat;
+    background-position: 90% 100%;
+    background-size: 50%;
+}
+
+.gradient {
+    padding: 150px 0 150px 0;
+    background-image: url('../images/gradient.png');
+    background-repeat: no-repeat;
+    background-position: -50% 0%;
+    background-size: 70%;
+}
+
+.cta p {
+    margin: 1.5rem;
+}
