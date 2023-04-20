@@ -53,6 +53,15 @@ p, .btn, a {
     line-height: 1.75rem;
 }
 
+/* Changes link color upon hover */
+a {
+    transition: all .2s ease-in-out; 
+}
+
+a:hover {
+    color: #DA1A5C;
+}
+
 /* Formats translucent gradient behind content */
 .bg-cover {
     background: rgb(7,4,23);
@@ -79,6 +88,7 @@ nav {
 .navbar-nav {
     padding-bottom: 1rem;
 }
+
 /* ************************************* BANNER SECTION ************************************* */
 .banner h1, .featured-works h1, .cta h1 {
     line-height: 3.5rem;
@@ -127,7 +137,7 @@ nav {
 }
 
 .card-img-top {
-    padding: 3rem;
+    padding: 3rem 3rem 1rem 3rem;
 }
 
 /* ************************************* FEATURED WORKS SECTION ************************************* */
@@ -268,7 +278,7 @@ footer p, footer a {
     }
 
     .card-img-top {
-        padding: 1.75rem 1.75rem 0 1.75rem;
+        padding: 1.75rem 1.75rem 1rem 1.75rem;
     }
 
     .card-body {
@@ -330,17 +340,11 @@ footer p, footer a {
     .cta {
         padding-top: 5rem;
         padding-right: 35%;
-        background-image: url('../images/phone.png');
-        background-repeat: no-repeat;
         background-position: 90% 90%;
         background-size: 40%;
     }
     
-    /* Positions gradient image behind CTA text */
     .gradient {
-        padding: 10rem 0 10rem 0;
-        background-image: url('../images/gradient.png');
-        background-repeat: no-repeat;
         background-position: 0% 25%;
         background-size: 50%;
     }
@@ -350,13 +354,17 @@ footer p, footer a {
 /* **************************************************** DESKTOP VERSION **************************************************** */
 /* ************************************************************************************************************************* */
 @media screen and (min-width:990px) {
-    h1, h2 {
-        font-size: 2rem;
-    }
-
     p, .btn, a {
         font-size: 1.75rem;
         line-height: 2.25rem;
+    }
+
+    .display-1 {
+        font-size: 6rem;
+    }
+    
+    .display-1 span {
+        font-size: 6.5rem;
     }
 
     /* ************************************* NAVIGATION SECTION ************************************* */
@@ -379,14 +387,6 @@ footer p, footer a {
         width: 55%;
     }
     
-    .display-1 {
-        font-size: 5rem;
-    }
-    
-    .display-1 span {
-        font-size: 5.5rem;
-    }
-    
     .banner-line-one span {
         font-size: 5.5rem;
     }
@@ -394,29 +394,95 @@ footer p, footer a {
     .banner-line-one h1 {
         font-size: 5rem;
     }
+
+    .banner-line-two span {
+        font-size: 5.5rem;
+    }
+    
+    .banner-line-two h1 {
+        font-size: 5rem;
+    }
+
    /* ************************************* SERVICES SECTION ************************************* */
+   .card-img-top {
+    padding: 2rem 2rem 1.5rem 2rem;
+    }
+   
    .card-title {
     font-size: 3rem;
     }
 
+    .card-body p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .services .card {
+        padding-bottom: 2rem;
+    }
+
     /* ************************************* FEATURED WORKS SECTION ************************************* */
+    .featured-works-line-one {
+        padding-right: 20rem;
+    }
+
+    .featured-works-line-two {
+        padding-left: 30rem;
+        padding-top: 1rem;
+    }
+    
     .featured-works .card {
         margin-bottom: 2.5rem;
         margin-top: 0rem;
         }
        
-       .col-md-5 {
+    .col-md-5 {
         width: 45%;
         margin-left: 2.75rem;
         margin-right: 2.75rem;
         }
     
-        .featured-works .column-2 {
-            margin-top: 4.5rem;
-        }
+    .featured-works .column-2 {
+        margin-top: 7rem;
+    }
     
-        .featured-works .btn {
-            margin-top: 1.5rem;
-        }
+    .featured-works .btn {
+         margin-top: 1.5rem;
+    }
+    
+    .btn {
+        border-radius: 3rem;
+        padding: 1.75rem 2.25rem 1.75rem 2.25rem;
+    }
     /* ************************************* CALL TO ACTION SECTION ************************************* */
+    .cta {
+        padding-top: 30rem;
+        padding-bottom: 30rem;
+        padding-right: 25%;
+        background-position: 75% 90%;
+        background-size: 25%;
+    }
+    
+    .gradient {
+        background-position: 15% 60%;
+        background-size: 35%;
+    }
+
+    .cta-line-one {
+        padding-bottom: 1rem;
+    }
+
+    /* ************************************* FOOTER SECTION ************************************* */
+    .footer {
+        max-width: 97%;
+        padding-top: 1.5rem;
+    }
+    
+    footer p, footer a {
+        font-size: 1.5rem;
+    }
+
+    .footer-links {
+        padding: 1rem 
+    }
 }
