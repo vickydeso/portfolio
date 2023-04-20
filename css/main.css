@@ -1,25 +1,16 @@
+/* ************************************************************************************************************************ */
+/* **************************************************** MOBILE VERSION **************************************************** */
+/* ************************************************************************************************************************ */
 .container {
     max-width: 100%;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
+/* Adds background image to website */
 body {
     background-image: url("../images/background.jpg");
     background-size: cover;
-}
-
-.bg-cover {
-    background: rgb(7,4,23);
-    background: linear-gradient(to top, rgba(7,4,23,0.75) 0%, rgba(7,4,23,0.75) 82%, rgba(7,4,23,0) 100%);
-}
-
-nav {
-    border-bottom: white solid 1px;
-}
-
-.navbar-toggler-icon {
-    color: white;
 }
 
 h1, h2, .card-title {
@@ -37,6 +28,7 @@ h2 {
     font-size: 2rem;
 }
 
+/* Changes first letter of each heading */
 .font-change {
     font-family: schwarzkopf-new, sans-serif;
     font-weight: 400;
@@ -45,7 +37,7 @@ h2 {
     color: white;
 }
 
-p, .btn {
+p, .btn, a {
     font-family: gopher, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -54,12 +46,35 @@ p, .btn {
     line-height: 1.75rem;
 }
 
+/* Formats translucent gradient behind content */
+.bg-cover {
+    background: rgb(7,4,23);
+    background: linear-gradient(to top, rgba(7,4,23,0.75) 0%, rgba(7,4,23,0.75) 82%, rgba(7,4,23,0) 100%);
+}
+
+/* ************************************* NAVIGATION SECTION ************************************* */
+/* Adds decorative line to navigation */
+nav {
+    border-bottom: white solid 1.25px;
+}
+
+/* Removes border on Bootstrap menu toggler */
+.navbar-toggler {
+    border: none;
+}
+
+/* Changes color of navigation items */
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+/* ************************************* BANNER SECTION ************************************* */
 .banner h1, .featured-works h1, .cta h1 {
     line-height: 3.5rem;
 }
 
 .banner {
-    height: 800px;
+    padding: 25rem 0 25rem 0;
 }
 
 .display-1 {
@@ -78,6 +93,18 @@ p, .btn {
     font-size: 5.5rem;
 }
 
+/* ************************************* SERVICES SECTION ************************************* */
+.services {
+    background-image: url("../images/gradient.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* Fixes alignment issues with Bootstrap row class */
+.row {
+    --bs-gutter-x: none;
+}
+
 .card, .card-img {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 1.5rem;
@@ -85,13 +112,14 @@ p, .btn {
 }
 
 .services .card {
-    padding-bottom: 15px;
+    padding-bottom: 1rem;
 }
 
 .card-img-top {
-    padding: 50px 50px 20px 50px;
+    padding: 3rem;
 }
 
+/* ************************************* FEATURED WORKS SECTION ************************************* */
 .featured-works {
     padding-top: 10rem;
 }
@@ -108,13 +136,13 @@ p, .btn {
     background-color: rgba(203, 203, 203, 0.6);
     color: rgba(7,4,23,0.75);
     border-radius: 2.5rem;
-    padding: 10px 20px 10px 20px;
-    margin-bottom: 15px;
+    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+    margin-bottom: 1rem;
 }
 
 .btn {
     border-radius: 2rem;
-    padding: 15px 25px 15px 25px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
 }
@@ -124,23 +152,200 @@ p, .btn {
     color: white;
 }
 
+/* ************************************* CALL TO ACTION SECTION ************************************* */
 /* Positions phone graphic behind CTA text */
 .cta {
-    height: 450px;
+    height: 35rem;
     background-image: url('../images/phone.png');
     background-repeat: no-repeat;
-    background-position: 90% 100%;
+    background-position: 90% 90%;
     background-size: 50%;
 }
 
+/* Positions gradient image behind CTA text */
 .gradient {
-    padding: 150px 0 150px 0;
+    padding: 10rem 0 10rem 0;
     background-image: url('../images/gradient.png');
     background-repeat: no-repeat;
-    background-position: -50% 0%;
+    background-position: -40% 15%;
     background-size: 70%;
 }
 
 .cta p {
     margin: 1.5rem;
+}
+
+/* ************************************* FOOTER SECTION ************************************* */
+.footer {
+    max-width: 95%;
+    border-top: white solid 1.25px;
+    padding: 1rem 0 1rem 0;
+}
+
+footer p, footer a {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0;
+    padding: 0 0.5rem 0 .5rem;
+}
+
+.footer-links {
+    padding: 0.5rem;
+}
+
+/* ************************************************************************************************************************ */
+/* **************************************************** TABLET VERSION **************************************************** */
+/* ************************************************************************************************************************ */
+@media screen and (min-width:760px) {
+    h1, h2 {
+        font-size: 3.5rem;
+    }
+
+    /* ************************************* BANNER SECTION ************************************* */
+    .banner-line-one {
+        width: 45%;
+        float: left;
+        text-align: right;
+    }
+
+    .banner-line-two {
+        width: 55%;
+        float: left;
+        text-align: left;
+        padding-left: 1rem;
+    }
+
+    .display-1 {
+        font-size: 3.75rem;
+    }
+    
+    .display-1 span {
+        font-size: 4.5rem;
+    }
+    
+    .banner-line-one span {
+        font-size: 4.5rem;
+    }
+    
+    .banner-line-one h1 {
+        font-size: 3.75rem;
+    }
+
+    /* ************************************* SERVICES SECTION ************************************* */
+    .services {
+        padding-left: .25rem;
+        padding-right: .25rem;
+    }
+    
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card-body p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+    .card-img-top {
+        padding: 1.75rem 1.75rem 0 1.75rem;
+    }
+
+    .card-body {
+        padding: .25rem;
+    }
+
+    .services .card {
+        width: 31%;
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+
+    /* ************************************* FEATURED WORKS SECTION ************************************* */
+    .featured-works {
+        padding-top: 20rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    
+    .featured-works-line-one {
+        padding-right: 10rem;
+    }
+
+    .featured-works-line-two {
+        padding-left: 20rem;
+    }
+
+    .featured-works .card {
+        margin-bottom: 1rem;
+        margin-top: 0rem;
+    }
+    
+    .card-img {
+        border-radius: 1.5rem;
+    }
+
+    .col-md-5 {
+        width: 47.5%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .column-1 {
+        float: left;
+    }
+
+    .featured-works .column-2 {
+        margin-top: 4.5rem;
+    }
+
+    .featured-works .btn {
+        margin-top: 1.5rem;
+    }
+
+    /* ************************************* CALL TO ACTION SECTION ************************************* */
+    .cta {
+        padding-top: 5rem;
+        padding-right: 35%;
+        background-image: url('../images/phone.png');
+        background-repeat: no-repeat;
+        background-position: 90% 90%;
+        background-size: 40%;
+    }
+    
+    /* Positions gradient image behind CTA text */
+    .gradient {
+        padding: 10rem 0 10rem 0;
+        background-image: url('../images/gradient.png');
+        background-repeat: no-repeat;
+        background-position: 0% 25%;
+        background-size: 50%;
+    }
+}
+
+
+/* **************************************************** DESKTOP VERSION **************************************************** */
+@media screen and (min-width:990px) {
+    /* ************************************* BANNER SECTION ************************************* */
+    h1 {
+        color: blue;
+    }
+
+    .display-1 {
+        font-size: 6rem;
+    }
+    
+    .display-1 span {
+        font-size: 6.5rem;
+    }
+    
+    .banner-line-one span {
+        font-size: 6.5rem;
+    }
+    
+    .banner-line-one h1 {
+        font-size: 6rem;
+    }
+
+    /* ************************************* FEATURED WORKS SECTION ************************************* */
 }
