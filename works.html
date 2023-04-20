@@ -5,124 +5,91 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/main.css" rel="stylesheet">
   <!-- Adobe Fonts stylesheet -->
   <link rel="stylesheet" href="https://use.typekit.net/dfo5blv.css">
-  <link rel="stylesheet" href="https://use.typekit.net/dfo5blv.css">
-  <link rel="stylesheet" href="https://use.typekit.net/dfo5blv.css">
-  <!-- Bootstrap’s CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Personal CSS stylesheet -->
+  <link href="css/main.css" rel="stylesheet">
   <title>Document</title>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">
-        <img src="images/logo.png" width="50" alt="girl smiling with star pigtails and headphones">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- NAVIGATION SECTION -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- Logo image -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" width="70" alt="logo image of smiling girl with star pigtails and headphones">
+        </a>
+        <!-- Hamburger menu toggler button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only"></span></a>
-            <a class="nav-item nav-link" href="works.html">works</a>
-            <a class="nav-item nav-link" href="about.html">about</a>
-            <a class="nav-item nav-link" href="contact.html">contact</a>
-          </div>
+        <!-- Navigation links -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="works.html">works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">contact</a>
+            </li>
+          </ul>
         </div>
-    </nav>
+      </nav>
+    </div>
   </header>
-
+  <!-- Adds translucent gradient behind content -->
   <div class="bg-cover">
     <main>
-        <div class="portfolio-1">
-            <h2>window</h2>
-            <h3>editorial, 2022</h3>
-            <img src="..." alt="Vector portrait of Joji">
-            <p>I created this editorial-style vector portrait during highschool for my senior graphic design class summative. I was tasked with creating a layout for a music artist of our choosing that creatively incorporates the lyrics of one of their songs. Joji has been a big inspiration for a lot of my life, hence why I made this portrait.</p>
-        </div>
+          <picture>
+            <source srcset="images/works/window-439.jpg 1x,
+                            images/works/window-878.jpg 2x,
+                            images/works/window-1317.jpg 3x"
+                    media="(min-width: 990px)">
 
-        <div class="portfolio-2">
-            <h2></h2>
-            <h3></h3>
-            <img src="" alt="">
-            <p></p>
-        </div>
-
-        <div class="portfolio-3">
-            <h2></h2>
-            <h3></h3>
-            <img src="" alt="">
-            <p></p>
-        </div>
-
-        <div class="portfolio-4">
-            <h2></h2>
-            <h3></h3>
-            <img src="" alt="">
-            <p></p>
-        </div>
-
-        <div class="portfolio-5">
-            <h2></h2>
-            <h3></h3>
-            <img src="" alt="">
-            <p></p>
-        </div>
-
-        <div class="portfolio-6">
-            <h2></h2>
-            <h3></h3>
-            <img src="" alt="">
-            <p></p>
-        </div>
-
-        <div class="portfolio-7">
-            <h2></h2>
-            <h3></h3>
-            <img src="" alt="">
-            <p></p>
-        </div>
-
-        <div class="portfolio-8">
-            <h2></h2>
-            <h3></h3>
-            <img src="" alt="">
-            <p></p>
-        </div>
-
-        <div class="portfolio-9">
-            <h2></h2>
-            <h3></h3>
-            <img src="" alt="">
-            <p></p>
-        </div>
-
-        <div class="portfolio-10">
-            <h2></h2>
-            <h3></h3>
-            <img src="" alt="">
-            <p></p>
-        </div>
-
+            <source srcset="images/works/window-342.jpg 1x,
+                            images/works/window-684.jpg 2x,
+                            images/works/window-1026.jpg 3x"
+                    media="(min-width: 760px)">     
+    
+            <source srcset="images/works/window-272.jpg 1x,
+                            images/works/window-544.jpg 2x,
+                            images/works/window-878.jpg 3x"
+                    media="(min-width: 320px)"> 
+            
+            <img src="images/works/window-342.jpg" class="card-img" alt="realistic vector portrait of Joji with lyrics on blue gradient background">
+          </picture>
     </main>
 
     <footer>
-      <p>&copy; Vicky De Sousa 2023. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="https://dribbble.com/vickysdesign">dribbble</a>
-        <a href="https://instagram.com/kittuete">instagram</a>
-        <a href="https://www.linkedin.com/in/vicky-de-sousa-9654a71b7/">linkedin</a>
-        <a href="#">&#x2191;</a>
+      <div class="footer container text-center">
+        <p>&copy; Vicky De Sousa 2023. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="https://dribbble.com/vickysdesign">dribbble</a>
+          <a href="https://instagram.com/kittuete">instagram</a>
+          <a href="https://www.linkedin.com/in/vicky-de-sousa-9654a71b7/">linkedin</a>
+        </div>
+        <a href="#">back to top &#x2191;</a>
       </div>
     </footer>
   </div>
-  <!-- Bootstrap’s JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <!-- FitText.js -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="jquery.fittext.js"></script>
+  <script>
+    jQuery("#responsive_headline").fitText();
   </script>
 </body>
 
