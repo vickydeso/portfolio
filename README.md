@@ -1,4 +1,3 @@
-"Tell us about your process, challenges you faced during development and how you overcame those changes. What have you learned by creating your web portfolio?" 
 # Process
 I found that my coding process was somewhat smoother at the beginning as I got most of HTML structure done using Bootstrap. Bootstrap was especially helpful since it comes with default styling that can be easily adjusted with CSS. After inputting all of my HTML, I began formatting my HTML with CSS in mobile first, then for tablet screen sizes, and finally for desktop. A lot of the code I did were adjustments to padding and text sizes so each breakpoint had properly sized elements.
 
