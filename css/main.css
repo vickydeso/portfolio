@@ -1,6 +1,26 @@
 /* ************************************************************************************************************************ */
 /* **************************************************** MOBILE VERSION **************************************************** */
 /* ************************************************************************************************************************ */
+/* Skip links to improve accessibility for screen reader users */
+.skip-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skip-links a {
+  padding: 1rem;
+  background: #DC1F77;
+  position: absolute;
+  color: white;
+}
+
+/* Shows skip link when focused on */
+.skip-links a:focus {
+  top: 0;
+}
+
+/* Adds spacing on edges of browser */
 .container {
     max-width: 100%;
     padding-left: 1.5rem;
@@ -58,6 +78,7 @@ a {
     transition: all .2s ease-in-out; 
 }
 
+/* Changes color of links upon hover */
 a:hover {
     color: #DA1A5C;
 }
@@ -120,6 +141,7 @@ nav {
 }
 
 /* ************************************* SERVICES SECTION ************************************* */
+/* Adds gradient image beind services section */
 .services {
     background-image: url("../images/gradient.png");
     background-repeat: no-repeat;
@@ -160,6 +182,7 @@ nav {
     top: auto;
 }
 
+/* Stylizes buttons on images */
 .card-img-overlay a {
     font-family: termina, sans-serif;
     font-weight: 600;
@@ -170,6 +193,7 @@ nav {
     padding: 0.75rem 1.25rem 0.75rem 1.25rem;
 }
 
+/* Stylizes button */
 .btn {
     border-radius: 2rem;
     padding: 1rem 1.5rem 1rem 1.5rem;
@@ -177,6 +201,7 @@ nav {
     border: none;
 }
 
+/* Changes color of button upon hover */
 .btn:hover {
     background-color: #DA1A5C;;
     color: white;
@@ -206,6 +231,7 @@ nav {
 }
 
 /* ************************************* FOOTER SECTION ************************************* */
+/* Adds decorative line to top of footer and adds spacing to edges */
 .footer {
     max-width: 95%;
     border-top: white solid 1.25px;
@@ -228,6 +254,7 @@ footer p, footer a {
 /* ************************************************************************************** */
 /* ************************************* ABOUT PAGE ************************************* */
 /* ************************************************************************************** */
+/* Ensures images keep their width and are fluid */
 .img-fluid {
     width: 100%;
 }
@@ -249,6 +276,7 @@ footer p, footer a {
 /* ************************************************************************************** */
 /* ************************************* CONTACT PAGE ************************************* */
 /* ************************************************************************************** */
+/* Adds bubble image behind heading */
 .contact-heading {
     padding-top: 15%;
     padding-bottom: 25%;
@@ -258,6 +286,7 @@ footer p, footer a {
     background-size: 95%;
 }
 
+/* Adds phone image and aligns it to right of container */
 .contact {
     background-image: url('../images/phone.png');
     background-repeat: no-repeat;
@@ -265,6 +294,7 @@ footer p, footer a {
     background-size: 45%;
 }
 
+/* Adds gradient image behind contact information */
 .contact-info {
     padding: 10% 5% 25% 5%;
     background-image: url('../images/gradient.png');
@@ -284,6 +314,7 @@ footer p, footer a {
     line-height: 1.75rem;
 }
 
+/* Removes underline on contact information links */
 .contact-info a {
     padding-right: 0.5rem;
     text-decoration: none;
@@ -297,10 +328,7 @@ footer p, footer a {
     font-size: 3.5rem;
 }
 
-form {
-    width: 100%;
-}
-
+/* Adds styling to form text */
 .form-group label, form input, form-row, form-group {
     font-family: gopher, sans-serif;
     font-weight: 400;
@@ -324,6 +352,7 @@ form {
     line-height: 2rem;
 }
 
+/* Changes color of description input box */
 .textarea {
     background-color:rgba(203, 203, 203, 0.15);
 }
@@ -373,6 +402,7 @@ form button {
     }
 
     /* ************************************* BANNER SECTION ************************************* */
+    /* Changes layout of banner heading */
     .banner-line-one {
         width: 42%;
         float: left;
@@ -425,6 +455,7 @@ form button {
         padding: .25rem;
     }
 
+    /* ALigns service cards horizontally */
     .services .card {
         width: 31%;
         margin-left: .5rem;
@@ -436,6 +467,7 @@ form button {
         padding-top: 20rem;
     }
     
+    /* Changes layout of featured works heading */
     .featured-works-line-one {
         padding-right: 10rem;
     }
@@ -453,12 +485,14 @@ form button {
         border-radius: 1.5rem;
     }
 
+    /* Puts featured works images in two columns */
     .col-md-5 {
         width: 47.5%;
         margin-left: 1rem;
         margin-right: 1rem;
     }
     
+    /* Aligns columns side by side */
     .column-1 {
         float: left;
     }
@@ -488,6 +522,7 @@ form button {
         background-size: 40%;
     }
     
+    /* Positions gradient image properly */
     .gradient {
         background-position: 0% 25%;
         background-size: 50%;
@@ -496,10 +531,6 @@ form button {
     /* ************************************************************************************** */
     /* ************************************* ABOUT PAGE ************************************* */
     /* ************************************************************************************** */
-    /* .img-fluid {
-        width: 100%;
-    } */
-
     .about-text {
         margin-top: -2.5rem;
         padding-left: 1.5rem;
@@ -521,6 +552,7 @@ form button {
     /* ************************************************************************************** */
     /* ************************************* CONTACT PAGE ************************************* */
     /* ************************************************************************************** */
+    /* Changes positioning of bubble image */
     .contact-heading {
         padding-top: 15%;
         padding-bottom: 25%;
@@ -530,6 +562,7 @@ form button {
         background-size: 95%;
     }
     
+     /* Changes positioning of phone image */
     .contact {
         background-image: url('../images/phone.png');
         background-repeat: no-repeat;
@@ -537,6 +570,7 @@ form button {
         background-size: 45%;
     }
     
+     /* Changes positioning of gradient image */
     .contact-info {
         padding: 10% 5% 25% 5%;
         background-image: url('../images/gradient.png');
@@ -553,6 +587,7 @@ form button {
         font-size: 5rem;
     }
 
+    /* Aligns input fields side by side */
     .col-md-6 {
         float: left;
         padding-left: .5rem;
@@ -652,13 +687,14 @@ form button {
     .featured-works .card {
         margin-bottom: 2.5rem;
         margin-top: 0rem;
-        }
-       
+    }
+    
+    /* Adjusts sizing of columns */
     .col-md-5 {
         width: 45%;
         margin-left: 2.75rem;
         margin-right: 2.75rem;
-        }
+    }
     
     .featured-works .column-2 {
         margin-top: 7rem;
@@ -673,6 +709,7 @@ form button {
         padding: 1.75rem 2.25rem 1.75rem 2.25rem;
     }
     /* ************************************* CALL TO ACTION SECTION ************************************* */
+    /* Adjusts positioning of phone image */
     .cta {
         padding-top: 30rem;
         padding-bottom: 30rem;
@@ -681,6 +718,7 @@ form button {
         background-size: 25%;
     }
     
+    /* Adjusts positioning of gradient image */
     .gradient {
         background-position: 15% 60%;
         background-size: 35%;
@@ -707,6 +745,7 @@ form button {
     /* ************************************************************************************** */
     /* ************************************* ABOUT PAGE ************************************* */
     /* ************************************************************************************** */
+    /* Adjusts positioning of text */
     .about-text {
         margin-top: 10rem;
         padding-left: 45rem;
@@ -715,6 +754,7 @@ form button {
         position: absolute;
     }
 
+    /* ALigns image to right of screen */
     .about-img {
         width: 50rem;
         position: relative;
@@ -732,18 +772,16 @@ form button {
         margin: 1rem 0 3rem 0;
     }
 
-    .footer {
-        width: 100%;
-    }
-
     /* ************************************************************************************** */
     /* ************************************* CONTACT PAGE ************************************* */
     /* ************************************************************************************** */
+    /* Adjusts sizing of contact form */
     form {
         width: 65%;
         padding-left: 2rem;
     }
     
+    /* Adjusts positioning of bubble image */
     .contact-heading {
         width: 65%;
         padding-top: 10%;
@@ -753,7 +791,8 @@ form button {
         background-position: 50% 50%;
         background-size: 95%;
     }
-    
+
+    /* Adjusts positioning of phone image */
     .contact {
         background-image: url('../images/phone.png');
         background-repeat: no-repeat;
@@ -761,6 +800,7 @@ form button {
         background-size: 30%;
     }
     
+    /* Adjusts positioning of gradient image */
     .contact-info {
         width: 35%;
         padding: 0% 0% 0% 5%;
@@ -782,16 +822,13 @@ form button {
     /* ************************************************************************************** */
     /* ************************************* WORKS PAGE ************************************* */
     /* ************************************************************************************** */
-    .portfolio {
-        align-items: center;
-        justify-content: center;
-    }
-    
+    /* Aligns images and text side by side */
     .portfolio img {
         float: left;
         margin-top: 3rem;
     }
 
+    /* Adjusts positioning and sizing of text */
     .works-1-text, .works-2-text, .works-3-text, .works-4-text {
         float: left;
         width: 50%;
