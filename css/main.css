@@ -210,6 +210,7 @@ nav {
     max-width: 95%;
     border-top: white solid 1.25px;
     padding: 1rem 0 1rem 0;
+    display: inline-block;
 }
 
 footer p, footer a {
@@ -296,10 +297,6 @@ footer p, footer a {
     font-size: 3.5rem;
 }
 
-.display-1 span {
-    font-size: 4rem;
-}
-
 form {
     width: 100%;
 }
@@ -333,6 +330,33 @@ form {
 
 form button {
     margin: 2rem 0 3.5rem 0;
+}
+
+/* ************************************************************************************** */
+/* ************************************* WORKS PAGE ************************************* */
+/* ************************************************************************************** */
+.portfolio {
+    text-align: center;
+}
+
+.portfolio h2 {
+    padding-top: 2rem;
+}
+
+.portfolio h3 {
+    font-family: termina, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.portfolio p {
+    margin-bottom: 5rem;
+}
+
+#works-1 {
+    padding-top: 2rem;
 }
 
 /* ************************************************************************************************************************ */
@@ -521,11 +545,11 @@ form button {
         background-size: 60%;
     }
 
-    .display-1 {
+    .contact-heading .display-1 {
         font-size: 4.5rem;
     }
     
-    .display-1 span {
+    .contact-heading .display-1 span {
         font-size: 5rem;
     }
 
@@ -534,6 +558,13 @@ form button {
         padding-left: .5rem;
         padding-right: .5rem;
         padding-bottom: 1rem;
+    }
+
+    /* ************************************************************************************** */
+    /* ************************************* WORKS PAGE ************************************* */
+    /* ************************************************************************************** */
+    .portfolio p {
+        margin-bottom: 10rem;
     }
 }
 
@@ -703,7 +734,6 @@ form button {
 
     .footer {
         width: 100%;
-        display: block;
     }
 
     /* ************************************************************************************** */
@@ -747,5 +777,45 @@ form button {
     
     .display-1 span {
         font-size: 5.5rem;
+    }
+
+    /* ************************************************************************************** */
+    /* ************************************* WORKS PAGE ************************************* */
+    /* ************************************************************************************** */
+    .portfolio {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .portfolio img {
+        float: left;
+        margin-top: 3rem;
+    }
+
+    .works-1-text, .works-2-text, .works-3-text, .works-4-text {
+        float: left;
+        width: 50%;
+        padding: 3rem;
+        margin: auto;
+    }
+
+    .works-1-text {
+        padding-top: 15rem;
+    }
+
+    .portfolio {
+        text-align: left;
+    }
+    
+    .portfolio h2 {
+        padding-top: 0rem;
+    }
+    
+    .portfolio p {
+        margin-bottom: 0rem;
+    }
+    
+    #works-1 {
+        padding-top: 2rem;
     }
 }
