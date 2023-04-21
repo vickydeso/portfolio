@@ -18,7 +18,13 @@
   <header>
     <!-- NAVIGATION SECTION -->
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <!-- Skip links for accessibility -->
+      <ul class="skip-links">
+        <li><a href="#nav" role="button">Skip to navigation</a></li>
+        <li><a href="#main" role="button">Skip to main content</a></li>
+        <li><a href="#footer" role="button">Skip to footer</a></li>
+      </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
         <!-- Logo image -->
         <a class="navbar-brand" href="index.html">
           <img src="images/logo.png" width="70" alt="logo image of smiling girl with star pigtails and headphones">
@@ -31,16 +37,16 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">home</a>
+              <a class="nav-link" href="index.html" role="button">home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="works.html">works</a>
+              <a class="nav-link" href="works.html" role="button">works</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">about</a>
+              <a class="nav-link" href="about.html" role="button">about</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">contact</a>
+              <a class="nav-link" href="contact.html" role="button">contact</a>
             </li>
           </ul>
         </div>
@@ -49,10 +55,10 @@
   </header>
   <!-- Adds translucent gradient behind content -->
   <div class="bg-cover">
-    <main>
+    <main id="main" role="main">
       <div class="contact">
         <div class="contact-heading text-center">
-          <h1 class="display-1"><span class="font-change">S</span>AY <span class="font-change">H</span>ELLO!</h1>
+          <h1 class="display-1" role="heading"> <span class="font-change">S</span>AY <span class="font-change">H</span>ELLO!</h1>
         </div>
           <div class="contact-info">
             <h3>business inquiries</h3>
@@ -101,7 +107,7 @@
       </div>
     </main>
 
-    <footer>
+    <footer id="footer">
       <div class="footer container text-center">
         <p>&copy; Vicky De Sousa 2023. All rights reserved.</p>
         <div class="footer-links">

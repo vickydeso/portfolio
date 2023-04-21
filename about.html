@@ -17,8 +17,14 @@
 <body>
   <header>
     <!-- NAVIGATION SECTION -->
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container" role="banner">
+      <!-- Skip links for accessibility -->
+      <ul class="skip-links">
+        <li><a href="#nav" role="link">Skip to navigation</a></li>
+        <li><a href="#main" role="link">Skip to main content</a></li>
+        <li><a href="#footer" role="link">Skip to footer</a></li>
+      </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark" id="nav" role="navigation">
         <!-- Logo image -->
         <a class="navbar-brand" href="index.html">
           <img src="images/logo.png" width="70" alt="logo image of smiling girl with star pigtails and headphones">
@@ -29,7 +35,7 @@
         </button>
         <!-- Navigation links -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center" role="menubar">
             <li class="nav-item active">
               <a class="nav-link" href="index.html">home</a>
             </li>
@@ -48,11 +54,11 @@
     </div>
   </header>
   <!-- Adds translucent gradient behind content -->
-  <div class="bg-cover">
-    <main>
-        <div class="about text-center row">
+  <div class="bg-cover" role="main">
+    <main id="main">
+        <div class="about text-center row" role="article">
             <div class="about-img col-lg-2">
-                <picture>
+                <picture role="img" aria-label="Realistic vector portrait of Vicky with lyrics on blue gradient background">
                     <source srcset="images/about/vicky-960.png 1x,
                                     images/about/vicky-1980.png 2x,
                                     images/about/vicky-2790.png 3x"
@@ -79,7 +85,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer id="footer">
       <div class="footer container text-center">
         <p>&copy; Vicky De Sousa 2023. All rights reserved.</p>
         <div class="footer-links">
