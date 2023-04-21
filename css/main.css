@@ -245,6 +245,95 @@ footer p, footer a {
     margin: 1rem 0 3rem 0;
 }
 
+/* ************************************************************************************** */
+/* ************************************* CONTACT PAGE ************************************* */
+/* ************************************************************************************** */
+.contact-heading {
+    padding-top: 15%;
+    padding-bottom: 25%;
+    background-image: url('../images/bubble-760.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 95%;
+}
+
+.contact {
+    background-image: url('../images/phone.png');
+    background-repeat: no-repeat;
+    background-position: 90% 20%;
+    background-size: 45%;
+}
+
+.contact-info {
+    padding: 10% 5% 25% 5%;
+    background-image: url('../images/gradient.png');
+    background-repeat: no-repeat;
+    background-position: -20% 0%;
+    background-size: 60%;
+}
+
+.contact-info h3 {
+    font-family: termina, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+}
+
+.contact-info p {
+    line-height: 1.75rem;
+}
+
+.contact-info a {
+    padding-right: 0.5rem;
+    text-decoration: none;
+}
+
+.contact-heading h1, .contact-heading span {
+    color:#DA1A5C;
+}
+
+.display-1 {
+    font-size: 3.5rem;
+}
+
+.display-1 span {
+    font-size: 4rem;
+}
+
+form {
+    width: 100%;
+}
+
+.form-group label, form input, form-row, form-group {
+    font-family: gopher, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    padding-top: 1rem;
+}
+
+.form-control {
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: white solid 1.25px;
+    font-family: gopher, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #6E757C;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+.textarea {
+    background-color:rgba(203, 203, 203, 0.15);
+}
+
+form button {
+    margin: 2rem 0 3.5rem 0;
+}
 
 /* ************************************************************************************************************************ */
 /* **************************************************** TABLET VERSION **************************************************** */
@@ -403,6 +492,48 @@ footer p, footer a {
 
     .about a {
         margin: 1rem 0 3rem 0;
+    }
+
+    /* ************************************************************************************** */
+    /* ************************************* CONTACT PAGE ************************************* */
+    /* ************************************************************************************** */
+    .contact-heading {
+        padding-top: 15%;
+        padding-bottom: 25%;
+        background-image: url('../images/bubble-760.png');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 95%;
+    }
+    
+    .contact {
+        background-image: url('../images/phone.png');
+        background-repeat: no-repeat;
+        background-position: 90% 20%;
+        background-size: 45%;
+    }
+    
+    .contact-info {
+        padding: 10% 5% 25% 5%;
+        background-image: url('../images/gradient.png');
+        background-repeat: no-repeat;
+        background-position: -20% 0%;
+        background-size: 60%;
+    }
+
+    .display-1 {
+        font-size: 4.5rem;
+    }
+    
+    .display-1 span {
+        font-size: 5rem;
+    }
+
+    .col-md-6 {
+        float: left;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        padding-bottom: 1rem;
     }
 }
 
@@ -573,5 +704,48 @@ footer p, footer a {
     .footer {
         width: 100%;
         display: block;
+    }
+
+    /* ************************************************************************************** */
+    /* ************************************* CONTACT PAGE ************************************* */
+    /* ************************************************************************************** */
+    form {
+        width: 65%;
+        padding-left: 2rem;
+    }
+    
+    .contact-heading {
+        width: 65%;
+        padding-top: 10%;
+        padding-bottom: 17.5%;
+        background-image: url('../images/bubble-990.png');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 95%;
+    }
+    
+    .contact {
+        background-image: url('../images/phone.png');
+        background-repeat: no-repeat;
+        background-position: 90% 50%;
+        background-size: 30%;
+    }
+    
+    .contact-info {
+        width: 35%;
+        padding: 0% 0% 0% 5%;
+        float: right;
+        background-image: url('../images/gradient.png');
+        background-repeat: no-repeat;
+        background-position: 15% 0%;
+        background-size: 50%;
+    }
+
+    .display-1 {
+        font-size: 5rem;
+    }
+    
+    .display-1 span {
+        font-size: 5.5rem;
     }
 }
